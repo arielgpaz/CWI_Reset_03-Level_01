@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Condicionais</title>
+</head>
+<body>
+
+	<script>
+
+		console.log("Nome do fulano é igual ao nome do beltrano?");
+		nomeDoFulano = "Cascão";
+		nomeDoBeltrano = "Cebolinha";
+
+		mesmoNome = (nomeDoFulano == nomeDoBeltrano);
+		console.log(mesmoNome);
+
+		console.log("Fulano é adulto?");
+		idade = 25;
+		maiorDeIdade = (idade >= 18);
+		console.log(maiorDeIdade);
+
+		console.log("Valor com juros:");
+		valor = 120;
+		valorComJuros = valor * 1.1;
+		console.log(valorComJuros);
+
+		console.log("Média de 5 itens:")
+		item1 = 2;
+		item2 = 4;
+		item3 = 6;
+		item4 = 8;
+		item5 = 10;
+		media = (item1 + item2 + item3+ item4 + item5)/5;
+		console.log(media);
+
+		console.log("A margem de lucro é:");
+		receitaLiquidaVendas = 20000;
+		custoProtutosVendidos = 15000;
+		lucroBruto = receitaLiquidaVendas - custoProtutosVendidos;
+		margemBruta = (lucroBruto / receitaLiquidaVendas) * 100;
+		console.log(margemBruta + "%");
+
+		console.log("O valor do saldo é:");
+		saldo = 1000;
+		calca = 99.90;
+		salario = 2500;
+		esmola = 0.10
+		saldo = saldo - calca + salario - esmola;
+		arCondicionado = 0.25 * saldo;
+		saldo = saldo - arCondicionado;
+		divida = saldo / 2;
+		saldo = saldo - divida;
+		console.log(saldo);
+
+	</script>
+
+</body>
+</html>

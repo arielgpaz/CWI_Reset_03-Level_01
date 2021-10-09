@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Estruturas de Repetição</title>
+</head>
+<body>
+
+	<script>
+
+		console.log("Imprimir 5 valores de um array")
+		catolico = ["Jesus", "Maria", "José", "Deus", "Espírito Santo"]
+
+		for (i=0;i<catolico.length;i++){
+		  console.log(catolico[i])
+		}
+		console.log("")
+
+		console.log("Calcular a média dos valores de um array")
+		valores = [1, 2, 3, 5, 8, 13, 21, 23, 34, 55]
+		soma = 0
+		i = 0
+		while(i<valores.length){
+		  soma = soma + valores[i++]
+		}
+		media = soma / valores.length
+		console.log("A média e: ", media)
+		console.log("")
+
+		console.log("Verificar se seu nome é comum.")
+		nomesComuns = ["Miguel", "Laura", "Lucas", "Beatriz", "Guilherme", "Maria", "Gabriel", "Ana", "Arthur", "Júlia", 
+		"Enzo", "Alice", "Rafael", "Mariana", "João", "Larissa", "Gustavo", "Maria Eduarda", "Pedro", "Sofia", 
+		"Bernardo", "Isabela", "Matheus", "Helena", "Davi", "Camila", "Heitor", "Lara", "Henrique", "Valentina", 
+		"Bruno", "Letícia", "Samuel", "Luana", "Felipe", "Amanda", "Lorenzo", "Yasmin", "Benjamin", "Sophia", 
+		"Vinícius", "Rebeca", "Rodrigo", "Juliana", "Eduardo", "Bruna", "Diego", "Cecília", "Antônio", "Fernanda", 
+		"Leonardo", "Isadora", "Noah", "Lorena", "Nícolas", "Lívia", "Daniel", "Manuela", "Thiago", "Vitória"]
+		seuNome = "Gabriela"
+		i = 0
+		ranking = 0
+		do{
+		  if (seuNome === nomesComuns[i]){
+		    console.log("É, nome comum :P")
+		    ranking = i;
+		  }
+		  i++
+		} while (i<nomesComuns.length)
+		if (ranking == 0){
+		  console.log("Diferentão, hein?! XD")
+		}
+
+	</script>
+
+</body>
+</html>
